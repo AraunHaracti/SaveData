@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".dialogs.SettingsDialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:text="@string/name_string"
+            android:textSize="30sp"
+            android:layout_marginEnd="10sp"/>
+        <EditText
+            android:id="@+id/name_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:textSize="25sp"
+            android:autofillHints="Name"
+            android:inputType="textPersonName"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:text="@string/surname_string"
+            android:textSize="30sp"
+            android:layout_marginEnd="10sp"/>
+        <EditText
+            android:id="@+id/surname_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:textSize="25sp"
+            android:autofillHints="Surname"
+            android:inputType="textPersonName"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:text="@string/gender_string"
+            android:textSize="30sp"
+            android:layout_marginEnd="10sp"/>
+        <RadioGroup
+            android:id="@+id/gender_RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp">
+            <RadioButton
+                android:id="@+id/gender_male_RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_male_string"
+                android:textSize="25sp"/>
+            <RadioButton
+                android:id="@+id/gender_female_RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_female_string"
+                android:textSize="25sp"/>
+            <RadioButton
+                android:id="@+id/gender_secret_RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_secret_string"
+                android:textSize="25sp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:text="@string/birthday_string"
+            android:textSize="30sp"
+            android:layout_marginEnd="10sp"/>
+        <TextView
+            android:id="@+id/birthday_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:text="@string/time_string"
+            android:textSize="30sp"
+            android:layout_marginEnd="10sp"/>
+        <TextView
+            android:id="@+id/time_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:layout_marginStart="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="140sp"
+                android:layout_height="match_parent"
+                android:text="@string/iq_string"
+                android:textSize="30sp"
+                android:layout_marginEnd="10sp"/>
+            <TextView
+                android:id="@+id/iq_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginStart="10sp"/>
+        </LinearLayout>
+        <SeekBar
+            android:id="@+id/iq_SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="20sp"
+            android:max="200"
+            android:progress="100"/>
+    </LinearLayout>
+
+</LinearLayout>

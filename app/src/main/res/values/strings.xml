@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SaveData</string>
+    <string name="name_string">Name</string>
+    <string name="surname_string">Surname</string>
+    <string name="gender_string">Gender</string>
+    <string name="gender_male_string">Male</string>
+    <string name="gender_female_string">Female</string>
+    <string name="gender_secret_string">Secret</string>
+    <string name="birthday_string">Birthday</string>
+    <string name="time_string">Time</string>
+    <string name="iq_string">IQ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
